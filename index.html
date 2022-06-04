@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.css" integrity="sha512-H2GlJYNMmZLAA8LfFQ8EW7WWVumdleFREr8PUyBZeuRt5mEd25RK11Zo+rHBqSzbp75v2xRFfkmiyO9MBtx3mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="app.js" defer></script>
+    
+  
+</head>
+<body>
+    <div class="main">
+      <div class="scrollbar">
+      <table class="table">
+        <thead class="tableLabels">
+          <tr>
+        <td>Title</td>
+        <td>Author</td>
+        <td>Pages</td>
+        <td>Read</td>
+          </tr>
+        </thead>
+      <tbody id="tableLabel">
+      </tbody>
+      </table>
+    </div>
+    <div id='template'>
+      <div id='libTitle'>
+     Library Book
+      </div>
+      <div id="bookCount" value='0'>Books = </div>
+      <div id='booksToRead'></div>
+      <div id='booksRead'></div>
+      <div id="form">
+        <p>Add a new book to the library</p>
+        <form onsubmit="event.preventDefault();">
+        <div id="formInput"><label for="title">Title</label>
+        <input id="title" type='text' required/>
+      </div>
+        <div id="formInput">
+          <label for="author">Author</label>
+        <input id="author" type='text' required/>
+      </div>
+        <div id="formInput">
+          <label for="pages">Pages</label>
+        <input id="pages" type='text' required/>
+      </div>
+        <div id="formInput">
+          <label for="read">Read</label>
+           <input id="read" type='checkbox'/> Yes
+      </div>
+      
+        <button id='addBookBtn' class="addBookBtn" type="submit">Add Book</button>
+      </form>
+        <button id="resetBtn" class="resetBtn"> Delete All Books</button>
+        </div>
+       <div id='btnModal'>
+         <button id='openModal'>Close</button>
+         <button id='closeModal' class='closeModal'>Open</button>
+      </div>
+    
+    </div>
+</div>
+</body>
+</html>

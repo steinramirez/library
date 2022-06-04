@@ -1,0 +1,141 @@
+  body{
+    overflow:hidden;
+    font-family:'fa-regular-400','Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+  button{
+    border:1px solid rgb(191, 188, 188);
+    background:none;
+    padding:10px;
+    border-radius: 20px;
+    margin:10px;
+  }
+  button:hover{
+    background-color:black;
+    color:white; 
+    margin:10px;
+  }
+  table 
+  {
+    display:flex;
+    flex-direction: column;
+    padding:10px;
+    color:white;
+  }
+  form{
+    display:flex;
+    flex-direction: column;
+  }
+  tbody{
+    display:flex;
+  }
+  tr {
+    display: grid;
+    grid-auto-flow: column;
+    text-align: center;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: center;
+    flex-wrap: nowrap;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  td{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:10px;
+  }
+  #libTitle{
+    align-items:center;
+    justify-content:center;
+    display:grid;
+    text-align: center;
+    padding: 20px;
+    font-size:30pt;
+  }
+  #form{
+    display:grid;
+    padding:20px;
+    gap:10px;
+  }
+  .active{
+    visibility:hidden;
+    height:10px;
+  }
+  #formInput{
+    padding:10px;
+  }
+  #btnModal{
+    display:grid;
+    align-items:center;
+    justify-content:center;
+    padding: 10px 20px;
+  }
+  #openModal{
+    padding: 10px 30px;
+  }
+  .hide {
+    visibility:hidden;
+  }
+  .closeModal {
+    visibility:hidden;
+  }
+  .main{
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    height:fit-content;
+  }
+  .scrollbar{
+    overflow:scroll;
+    height: 80vh;
+  }
+    .tableLabels{
+   
+    justify-content:space-around;
+    align-items: center;
+    text-align: center;
+    background-color:black;
+    padding:20px;
+    color:white;
+    border-radius:20px;
+    
+  }
+    #tableLabel{
+  display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    color: black;
+    text-align:center;
+    justify-content: space-around;
+}
+    #tableLabel div{
+    display:grid;
+    grid-auto-flow: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;   
+    background-color:white;
+    color:black; 
+    padding:20px;
+  }
+    #bookCount{
+    display:block;
+    align-items: center;
+    text-align: center;
+  }
+  .pRead:hover{
+    cursor:pointer;
+    color:white;
+  } 
+  .read-status:hover{
+    background-color: black;
+    color:white;
+  }
+  .read-status {
+    display:flex;
+    flex-direction: column;
+  }
+  i{
+    margin:10px;
+  }
